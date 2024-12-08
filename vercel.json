@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "./index.js",
+        "src": "index.js",
         "use": "@vercel/node"
       }
     ],
@@ -11,6 +11,11 @@
             "src": "/(.*)",
             "dest": "/index.js"
         }
-    ]
+    ],
+    "env": {
+    "PORT": 3000,
+    "DB_URL":"mongodb+srv://ritesh:admin@cluster0.f4rey.mongodb.net/portfolio-data"
+}
+
   }
   
