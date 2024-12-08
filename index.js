@@ -75,7 +75,9 @@ app.get("/get" , async(req, res)=>{
     }
 })
 
-
+app.get("/",(req, res)=>{
+    res.send("welcome to my api")
+})
 
 
 
